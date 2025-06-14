@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "1835dd11-9ae2-495e-915c-d617c223793b",
+		"name": "Back Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15225193",
+		"_collection_link": "https://caztor.postman.co/workspace/Caztor~5ac86d8b-31e3-41c0-8d54-9fdabeef1284/collection/15225193-1835dd11-9ae2-495e-915c-d617c223793b?action=share&source=collection_link&creator=15225193"
+	},
+	"item": [
+		{
+			"name": "list-users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/list-users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"list-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/create-user?name=Mario&email=mario@gmail.com&password=mario1234",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create-user"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mario"
+						},
+						{
+							"key": "email",
+							"value": "mario@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "mario1234"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/delete-user?id=4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete-user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-user",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/update-user?name=cambiazo&email=edit@gmail.com&password=1111&id=4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update-user"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "cambiazo"
+						},
+						{
+							"key": "email",
+							"value": "edit@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "1111"
+						},
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/get-user?id=4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"get-user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search-user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/search-user?term=i",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"search-user"
+					],
+					"query": [
+						{
+							"key": "term",
+							"value": "i"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
