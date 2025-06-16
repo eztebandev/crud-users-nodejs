@@ -72,6 +72,6 @@ const connectDB = require('./lib/connection');
     });
       
     app.listen(PORT, () => {
-        console.log(`Servidor corriendo en http://localhost:${PORT}`);
+        console.log(`Hola Lucero :D, soy un servidor vivo`);
     });
 })();
