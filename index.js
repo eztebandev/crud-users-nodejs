@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;;
 const connectDB = require('./lib/connection');
 
 (async () => {
@@ -72,6 +72,6 @@ const connectDB = require('./lib/connection');
     });
       
     app.listen(PORT, () => {
-        console.log(`Hola Lucero :D, soy un servidor vivo`);
+        console.log(`Server running on port ${PORT}`);
     });
 })();
